@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>几个果农-个人中心</title>
+    <link type="text/css" rel="stylesheet" href="css/base.css"/>
+    <link type="text/css" rel="stylesheet" href="css/animations.css"/>
+    <link type="text/css" rel="stylesheet" href="css/layout.css?3"/>
+</head>
+<body>
+<header class="page-top red-head">
+    <h1 class="head-text">个人中心</h1>
+    <span class="back-btn-outer">
+        <a href="index.html" class="back-btn"></a>
+    </span>
+    <a href="index.html" class="head-fl-text">主页</a>
+</header>
+<div class="container">
+    <div class="user-wrapper">
+        <section class="user-part">
+            <div class="user-head">
+                <dl class="clearfix">
+                    <dt class="user-img-outer"><img src="images/goods2.jpg"/></dt>
+                    <dd class="user-name-outer">
+                        <span class="user-name">白鹭</span>
+                        <span class="user-id">100234567</span>
+                    </dd>
+                </dl>
+            </div>
+        </section>
+        <section class="user-part">
+            <h2 class="form-title">我的订单<i class="form-icon"></i> </h2>
+            <div class="form-kind">
+                <ul>
+                    <li>
+                        <a href="javascript:;">未完成订单<span class="form-num">1</span> </a>
+                    </li>
+                    <li class="cur">
+                        <a href="javascript:;">已完成订单</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="user-part">
+            <ul class="form-other">
+                <li>
+                    <a href="address.html">
+                        <h2 class="form-title">我的收货地址<i class="user-address-icon"></i> <i class="sub-page-open"></i></h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <h2 class="form-title">我的优惠券<i class="coupon-icon"></i> <i class="sub-page-open"></i></h2>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+</div>
+<script type="text/javascript" src="js/sea.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+<script>
+    seajs.use('modules/user');
+</script>
+</body>
+</html>

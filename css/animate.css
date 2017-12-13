@@ -1,0 +1,25 @@
+/* animation */
+.a-fadein{-webkit-animation:1s ease-out backwards;
+    -moz-animation:1s ease-out backwards;
+    -ms-animation:1s ease-out backwards;
+    animation:1s ease-out backwards;}
+/* 淡入 */
+.a-fadein{-webkit-animation-name:fadein;-moz-animation-name:fadein;-ms-animation-name:fadein;animation-name:fadein;}
+/* define */
+/* 淡入 */
+@-webkit-keyframes fadein{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+@-moz-keyframes fadein{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+@-ms-keyframes fadein{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+@keyframes fadein{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}

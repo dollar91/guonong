@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>几个果农-我的收货地址</title>
+    <link type="text/css" rel="stylesheet" href="css/base.css"/>
+    <link type="text/css" rel="stylesheet" href="css/animations.css"/>
+    <link type="text/css" rel="stylesheet" href="css/layout.css?3"/>
+</head>
+<body>
+<header class="page-top red-head">
+    <h1 class="head-text">收货地址</h1>
+    <span class="back-btn-outer">
+        <a href="address.html" class="back-btn"></a>
+    </span>
+    <a href="###" class="head-fl-text" id="editAddressBtn">修改</a>
+</header>
+<div class="container">
+    <div class="user-wrapper">
+        <section class="add-adress-form">
+            <ul class="address-list">
+                <li>
+                    <label class="address-label">姓名</label>
+                    <input placeholder="请输入您的姓名" class="edit-input" type="text" value="以你"/>
+                </li>
+                <li>
+                    <label class="address-label">联系电话</label>
+                    <input placeholder="请输入您的联系方式" class="edit-input" type="number" value="12345678"/>
+                </li>
+                <li>
+                    <label class="address-label">市、区</label>
+                    <input placeholder="市、区" class="edit-input" type="text" value="武汉市武昌区"/>
+                </li>
+                <li>
+                    <label class="address-label">详细地址</label>
+                    <input placeholder="请输入详细地址" class="edit-input" type="text" value="你说我容易吗"/>
+                </li>
+            </ul>
+            <div class="delete-address-outer">
+                <a href="###" class="delete-address"><span class="dialog-delete"></span>删除收货地址</a>
+            </div>
+        </section>
+    </div>
+</div>
+<script type="text/javascript" src="js/sea.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+<script>
+    seajs.use('modules/editAddress');
+</script>
+</body>
+</html>

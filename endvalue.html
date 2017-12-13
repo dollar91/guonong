@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>几个果农-结算</title>
+    <link type="text/css" rel="stylesheet" href="css/base.css"/>
+    <link type="text/css" rel="stylesheet" href="css/animations.css"/>
+    <link type="text/css" rel="stylesheet" href="css/layout.css?3"/>
+</head>
+<body>
+<header class="page-top red-head">
+    <span class="restore-btn-outer">
+        <a href="user.html" class="user-btn"></a>
+    </span>
+    <h1 class="head-text">结算清款</h1>
+    <span class="back-btn-outer">
+        <a href="shopcar.html" class="back-btn"></a>
+    </span>
+</header>
+<div class="container">
+    <div class="content shopcar-wrapper">
+        <section class="endvalue-box">
+            <div class="endvalue-item">
+                <a href="address.html">
+                    <h2 class="form-title">我的收货地址<i class="user-address-icon"></i> <i class="sub-page-open"></i></h2>
+                    <div class="endvalue-address">
+                        <p>武汉书武昌区</p>
+                        <p>焊接总部国际188号</p>
+                    </div>
+                </a>
+            </div>
+            <div class="endvalue-item">
+                <div class="endvalue-shop-outer">
+                    <h3 class="endvalue-shop">店铺：洪山广场店</h3>
+                    <i class="listen-icon"></i>
+                </div>
+                <div class="endvalue-tip">哎哟哟，有人先下手为强了，系统已自动更改数量</div>
+                <ul class="shopcar-goods-list">
+                    <li>
+                        <div class="love-img"><img src="images/goods1.jpg"></div>
+                        <div class="love-info">
+                            <p class="goods-name">智力车厘子</p>
+                            <p class="goods-price">￥29.9一袋/500克</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="love-img"><img src="images/goods1.jpg"></div>
+                        <div class="love-info">
+                            <p class="goods-name">智力车厘子</p>
+                            <p class="goods-price">￥29.9一袋/500克</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="love-img"><img src="images/goods1.jpg"></div>
+                        <div class="love-info">
+                            <p class="goods-name">智力车厘子</p>
+                            <p class="goods-price">￥29.9一袋/500克</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="love-img"><img src="images/goods1.jpg"></div>
+                        <div class="love-info">
+                            <p class="goods-name">智力车厘子</p>
+                            <p class="goods-price">￥29.9一袋/500克</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="endvalue-item">
+                <div class="endvalue-time-outer">
+                    <span class="endvalue-time-title"><i class="endvalue-time-icon"></i> 配送时间</span>
+                    <a href="###" class="endvalue-time-select">今天送达</a>
+                    <a href="###" class="endvalue-time-select">2小时送达</a>
+                </div>
+                <div class="endvalue-time-outer">
+                    <span class="endvalue-time-title"><i class="endvalue-pay-icon"></i> 支付信息</span>
+                    <a href="###" class="endvalue-pay-select">
+                        <div class="goods-select selected"><i class="goods-select-icon"></i> </div>
+                        微信支付
+                    </a>
+                    <a href="###" class="endvalue-pay-select">
+                        <div class="goods-select"><i class="goods-select-icon"></i> </div>
+                        货到付款
+                    </a>
+                </div>
+                <div class="endvalue-time-outer">
+                    <input type="text" class="endvalue-input" placeholder="让配送员带点什么呢？"/>
+                </div>
+            </div>
+        </section>
+        <section class="price-total-wrapper">
+            <div class="price-total-inner clearfix">
+                <div class="fl">
+                    合计：<span class="money">14元</span>
+                </div>
+                <div class="fr">
+                    <a href="weixin.html" class="endvalue-btn" id="endMoneyBtn">确认</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<script type="text/javascript" src="js/sea.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+<script>
+    seajs.use(['public','plugins'],function(public,plugins){
+        plugins($);
+        //选择时间
+        $(".endvalue-time-select").on('tap',function(){
+            var str = '<ul class="time-box">\
+                    <li><a href="###">9:00</a> </li>\
+                    <li><a href="###">9:00</a> </li>\
+                    <li><a href="###">9:00</a> </li>\
+                    <li><a href="###">9:00</a> </li>\
+                    <li><a href="###">9:00</a> </li>\
+                    </ul>';
+            var timeDialog = $.gnDialog({
+                text:str,
+                close: false
+            });
+            $(".time-box li").on('tap',function(){
+                timeDialog.close();
+            })
+        })
+    });
+</script>
+</body>
+</html>

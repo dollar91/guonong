@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>几个果农-购物车</title>
+    <link type="text/css" rel="stylesheet" href="css/base.css"/>
+    <link type="text/css" rel="stylesheet" href="css/animations.css"/>
+    <link type="text/css" rel="stylesheet" href="css/layout.css?3"/>
+</head>
+<body>
+<header class="page-top red-head">
+    <span class="restore-btn-outer">
+        <a href="user.html" class="user-btn"></a>
+    </span>
+    <h1 class="head-text">购物车</h1>
+    <span class="back-btn-outer">
+        <a href="javascript:;" class="back-btn"></a>
+    </span>
+</header>
+<div class="container">
+    <div class="content shopcar-wrapper">
+        <section class="no-goods-box" style="display:none">
+            <div class="nogoods-img-outer">
+                <img src="images/bg.jpg">
+            </div>
+            <p class="no-goods-text">这里还没有好吃的唷~</p>
+            <p><a href="index.html" class="shopcar-link">再逛逛</a> </p>
+        </section>
+        <section class="have-goods-box">
+            <ul class="shopcar-goods-list">
+                <li>
+                    <div class="goods-select-outer">
+                        <div class="goods-select"><i class="goods-select-icon"></i> </div>
+                    </div>
+                    <div class="love-img"><img src="images/goods1.jpg"></div>
+                    <div class="love-info">
+                        <p class="goods-name">智力车厘子</p>
+                        <p class="goods-price">￥29.9一袋/500克</p>
+                    </div>
+                    <div class="shopcar-money-outer">
+                        <div class="edit-icon"></div>
+                        <p class="num">*1</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods-select-outer">
+                        <div class="goods-select selected"><i class="goods-select-icon"></i> </div>
+                    </div>
+                    <div class="love-img"><img src="images/goods1.jpg"></div>
+                    <div class="love-info">
+                        <p class="goods-name">智力车厘子</p>
+                        <p class="goods-price">￥29.9一袋/500克</p>
+                    </div>
+                    <div class="shopcar-money-outer">
+                        <div class="edit-icon"></div>
+                        <p class="num">*1</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods-select-outer">
+                        <div class="goods-select"><i class="goods-select-icon"></i> </div>
+                    </div>
+                    <div class="love-img"><img src="images/goods1.jpg"></div>
+                    <div class="love-info">
+                        <p class="goods-name">智力车厘子</p>
+                        <p class="goods-price">￥29.9一袋/500克</p>
+                    </div>
+                    <div class="shopcar-money-outer">
+                        <div class="edit-icon"></div>
+                        <p class="num">*1</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods-select-outer">
+                        <div class="goods-select"><i class="goods-select-icon"></i> </div>
+                    </div>
+                    <div class="love-img"><img src="images/goods1.jpg"></div>
+                    <div class="love-info">
+                        <p class="goods-name">智力车厘子</p>
+                        <p class="goods-price">￥29.9一袋/500克</p>
+                    </div>
+                    <div class="shopcar-money-outer">
+                        <div class="edit-icon"></div>
+                        <p class="num">*1</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="price-total-wrapper">
+            <!--<p class="price-miss"></p>-->
+            <div class="price-total-inner clearfix">
+                <div class="fl">
+                    应付总额：<span class="money">14元</span>
+                </div>
+                <div class="fr">
+                    <a href="endvalue.html" class="endvalue-btn" id="endMoneyBtn">结算</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/sea.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+<script>
+    seajs.use('modules/shopcar');
+</script>
+</script>
+</body>
+</html>

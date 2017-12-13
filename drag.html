@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>几个果农</title>
+    <link type="text/css" rel="stylesheet" href="css/base.css"/>
+    <style type="text/css">
+#con{
+  border: 1px solid #009933;margin: 0px;width: 180px;height: 200px;position: absolute;left: 30px;top:40px;
+}
+#title,#main{
+  margin: 10px;text-align: center;
+}
+#title{
+  background:#009933;height: 30px;line-height: 30px;font-size: 16px;color: #fff;
+}
+#title img{width:100%;height:30px;}
+#main{
+  height: 140px;font-size: 14px;line-height: 20px;color:#0058d2;
+}
+    </style>
+</head>
+<body>
+<div id="con">
+  <div id="title"><img src="images/goods1.jpg"></div>
+  <div id="main">点击title,移动整个框</div> 
+</div>
+<script type="text/javascript" src="js/zepto-1.1.6.min.js"></script>
+<script type="text/javascript" src="js/touch.js"></script>
+<script type="text/javascript">
+;(function($){
+  /*touchstart the title and drag the con moving*/
+  var moveX,moveY,startX,startY;
+  $(document).on("touchstart","#title",function(event){
+    if($(event.target).parents('#title')){
+      var touchPros = event.touches[0];
+      startX = touchPros.pageX - $(event.target).parents('#title').offset().left;
+      startY = touchPros.pageY - $(event.target).parents('#title').offset().left;
+    }
+    return false;
+  }).on("touchmove","#title",function(event){
+    if($(event.target).parents('#title')){
+      var touchPros = event.touches[0];
+      moveX = touchPros.pageX - startX;
+      moveY = touchPros.pageY - startY;
+      $('#con').css('left',moveX).css('top',moveY);
+      }
+  });
+})(Zepto); 
+</script>
+</body>
+</html>

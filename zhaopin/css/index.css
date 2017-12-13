@@ -1,0 +1,77 @@
+body{
+	
+	width:100%;
+	overflow:hidden;
+	
+}
+html,body{height:100%;}
+
+.wrapper{width:100%;height:100%;text-align:center;position:relative;}
+.hide{ display:none;}
+.img{max-width:100%;height:100%;}
+.bm-btn{position:absolute;width:48%;bottom:6%;left:26%;}
+
+.page{
+	width:100%;
+	height:100%;
+	position:absolute;
+	text-align:center;
+}
+
+.page .wrap{
+	height:100%;
+	overflow:hidden;
+}
+
+.page-1-1{ background-color:#f05249;}
+.page-2-1{ background-color:#ffa64c;}
+.page-3-1{ background-color:#26ba88;}
+.page-4-1{ background-color:#1d6693;}
+.page-5-1{ background-color:#ec4f00;}
+.page-6-1{ background-color:#ff9899;}
+
+.page-current{
+	z-index:1;
+}
+.music-outer{
+	position:absolute;
+	top:10px;
+	right:10px;
+	overflow:hidden;
+	border-radius:18px;
+	width:32px;
+	height:32px;
+	border:1px solid #fff;
+	z-index:10;
+}
+.music-icon{
+	display:block;
+	width:32px;
+	height:32px;
+	background:rgba(0,0,0,.3) url("../img/music@2x.png") no-repeat center center;
+}
+.music-off{
+	background:rgba(0,0,0,.3) url("../img/music_off@2x.png") no-repeat center center;
+}
+
+.up-icon {
+	height:auto;
+	width:25px;
+	position:absolute;
+	left:50%;
+	top:93%;
+	margin-left:-12px;
+	z-index:10;
+}
+
+.pt-pageBtn{
+	-webkit-animation: moveLeftRight ease-in-out 1s both;
+	animation: moveLeftRight ease-in-out 1s both;
+}
+@-webkit-keyframes moveLeftRight {
+	0% { -webkit-transform: translatex(-50%);-webkit-opacity:0.1;}
+	20% { -webkit-transform: translateX(0%);-webkit-opacity:1;}
+	50% { -webkit-transform: translateX(30%);}
+	75% { -webkit-transform: translateX(-30%);}
+	100% { -webkit-transform: translateX(0%);}
+}
